@@ -203,6 +203,20 @@ footer {
     text-decoration: underline;
 }
 
+/*---アニメーション------*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+    will-change: opacity, transform;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*---レスポンシブ対応---*/
 
 @media (max-width: 48rem) {
 
